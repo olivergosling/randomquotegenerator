@@ -4,7 +4,7 @@
  */
 
 body {
-  background-color: #36b55c;
+  background-color: #5B4B49;
   color: white;
   font-family: 'Playfair Display', serif;
 }
@@ -45,6 +45,7 @@ body {
   position: absolute;
 }
 
+.category,
 .source {
   font-size: 1rem;
   letter-spacing: 0.05em;
@@ -71,6 +72,18 @@ body {
   font-style: normal;
 }
 
+.category:before {
+  content: "[";
+}
+
+.category:after {
+  content: "]";
+}
+
+.category {
+  text-align: right;
+}
+
 #loadQuote {
   position: fixed;
   width: 12em;
@@ -81,7 +94,7 @@ body {
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
-  background-color: #36b55c;
+  background-color: rgba(0,0,0,0.3);
   padding: 15px 0;
   transition: .5s ;
 }
@@ -100,6 +113,7 @@ body {
   .quote:before, .quote:after {
     font-size: 6rem;
   }
+  .category,
   .source {
     font-size: 1.25rem;
   }
